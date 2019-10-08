@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>KennyCxy&#39;s Blog</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://ghostwithblade.github.io/"/>
+  <updated>2019-09-25T07:25:09.623Z</updated>
+  <id>https://ghostwithblade.github.io/</id>
+  
+  <author>
+    <name>KennyCxy</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>LTE 学习笔记</title>
+    <link href="https://ghostwithblade.github.io/2019/09/24/Hello-Hexo/"/>
+    <id>https://ghostwithblade.github.io/2019/09/24/Hello-Hexo/</id>
+    <published>2019-09-23T20:28:23.000Z</published>
+    <updated>2019-09-25T07:25:09.623Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="课堂笔记"><a href="#课堂笔记" class="headerlink" title="课堂笔记"></a>课堂笔记</h1><h3 id="1-HSDPA-高速下行分组接入-又称3-5G，属于WCDMA技术的延伸-速率达到14-4Mbit-s"><a href="#1-HSDPA-高速下行分组接入-又称3-5G，属于WCDMA技术的延伸-速率达到14-4Mbit-s" class="headerlink" title="1.HSDPA(高速下行分组接入)又称3.5G，属于WCDMA技术的延伸:速率达到14.4Mbit/s."></a>1.HSDPA(高速下行分组接入)又称3.5G，属于WCDMA技术的延伸:速率达到14.4Mbit/s.</h3><h3 id="2-HSUPA-高速上行分组接入-通过采用多码传输、HARQ、基于Node-B的快速调度等关键技术，使得单小区最大上行数据吞吐率达到5-76Mbit-s。"><a href="#2-HSUPA-高速上行分组接入-通过采用多码传输、HARQ、基于Node-B的快速调度等关键技术，使得单小区最大上行数据吞吐率达到5-76Mbit-s。" class="headerlink" title="2.HSUPA(高速上行分组接入):通过采用多码传输、HARQ、基于Node B的快速调度等关键技术，使得单小区最大上行数据吞吐率达到5.76Mbit/s。"></a>2.HSUPA(高速上行分组接入):通过采用多码传输、HARQ、基于Node B的快速调度等关键技术，使得单小区最大上行数据吞吐率达到5.76Mbit/s。</h3><pre><code>HARQ：混合自动重传请求。</code></pre><h3 id="3-功率控制：开环功率控制以及闭环功率控制。"><a href="#3-功率控制：开环功率控制以及闭环功率控制。" class="headerlink" title="3.功率控制：开环功率控制以及闭环功率控制。"></a>3.功率控制：开环功率控制以及闭环功率控制。</h3><pre><code>开环功率控制：不需要反馈信息，以最大的功率来发送信息；手机开机时使用；   闭环功率控制：需要反馈信息；通过增大或者降低功率的方式进行控制。</code></pre><h3 id="4-LTE历史"><a href="#4-LTE历史" class="headerlink" title="4.LTE历史"></a>4.LTE历史</h3><pre><code>3.9G又称为准4G;  4G：用到载波聚合，VOLTE;  4.5G:Narrow Band Internet of Things, NB-IoT,窄带物联网;  4.75G:现在5G网络;   NAS:需要依赖4G的核心网;  5GAS:不需要依赖4G的核心网;  LTE=Long Term Evolution=长期演进，是3GPP指定的下一代无线通信标准； LTE有两种制式：FDD-LTE(电信、联通)、TDD-LTE（移动）；  LTE结构简单，取消了RNC，只有基站与核心网2部分，所以称为扁平化结构；</code></pre><h3 id="5-LTE目标"><a href="#5-LTE目标" class="headerlink" title="5.LTE目标"></a>5.LTE目标</h3><ol><li>峰值速率：下行达到100Mbit/s,上行达到50Mbit/s。<br> 载波聚合：下行达到300Mbit/s,上行达到150Mbit/s。</li><li>低时延：控制面时延为100ms,用户面时延为10ms;</li><li>频谱灵活：<ul><li>D频段：用在室外；D频段范围为2570MHZ-2620MHZ;市区</li><li>E频段：用在室内；E频段范围为2300MHZ-2400MHZ;</li><li>F频段：用在室外；F频段范围为1880MHZ-1920MHZ;郊区  </li></ul></li><li>更高的频谱效率：频谱利用率高</li></ol><h3 id="6-LTE特征"><a href="#6-LTE特征" class="headerlink" title="6.LTE特征"></a>6.LTE特征</h3><pre><code>1. 支持6种带宽；1.4MHZ、3MHZ、5MHZ、10MHZ、15MHZ、20MHZ； 2. 峰值速率：100 Mbps 针对高移动性，1 Gbps 针对低移动性；3. 提高边缘速率；4. LTE核心网只有PS域（分组交换，上网），没有CS域（电路交换，语音）,所以打电话通过CSFB（语音回落）技术或者VOLTE (IP电话)</code></pre><h3 id="7-LTE的网络构架"><a href="#7-LTE的网络构架" class="headerlink" title="7.LTE的网络构架"></a>7.LTE的网络构架</h3><p>整个LTE网络(<strong>EPS</strong>)从接入网和核心网方面分为<strong>E-UTRAN和EPC</strong>两个大的部分。对应于3G技术中的UTRAN和EPC部分。  </p><ol><li>接入网（也称E-UTRAN）由 eNodeB 基站构成  </li><li>核心网 EPC（EvolvedPacket Core）<br>  EPC核心网主要由三部分：移动性管理设备（MME（控制面））、服务网关（SGW（用户面））、分组数据网关（PGW）、HSS：用户归属识别等组成，其中，MME 负责移动性管理、信令处理等功能，SGW 负责本地网络用户数据处理部分，PGW 则负责用户数据包与其他网络的处理，HSS负责存放所有属于该核心网的用户的数据信息。</li><li>网络接口：<br>  S1接口：eNodeB与EPC<br>  X2接口：eNodeB之间<br>  Uu接口：eNodeB与UE</li></ol><h3 id="8-LTE接口"><a href="#8-LTE接口" class="headerlink" title="8.LTE接口"></a>8.LTE接口</h3><p><img src="assets%5Cjiagou.png" alt="avatar"><br>X2 — 相邻eNodeB（基站）之间的接口<br>S1-MME — E-UTRAN和MME之间的控制面接口<br>S1-U — E-UTRAN和-SGW之间的业务面接口<br>Uu — eNodeB和UE之间的<strong>空中接口</strong><br>S5 — 同网内S-GW和P-GW接口<br>S8 — 异网S-GW和P-GW接口<br>SGi — 连接外部数据网络的接口<br>S10 — MME之间传递消息接口<br>S11接口：MME与SGW之间的接口<br>S6a接口：MME与HSS之间的接口</p><p>动态的资源分配：LTE的资源是共享资源，是动态分配的</p><h3 id="9-EnodeB结构分层"><a href="#9-EnodeB结构分层" class="headerlink" title="9.EnodeB结构分层"></a>9.EnodeB结构分层</h3><ol><li>物理层 PHY</li><li>数据链路层  <ul><li>MAC（媒体接入控制层）</li><li>RLC（无线链路控制层）    分段重组</li><li>PDCP（分组数据汇聚层协议）加解密及完整性保护</li></ul></li><li>网络层：（控制面）<ul><li>RRC 无线资源控制层,控制工作状态</li><li>NAS 直传信息传输</li></ul></li></ol><p>位置更新：由MME完成位置更新<br>寻呼：寻找用户，寻呼由MME发起来的<br>UE的寻呼接收遵循非连续接收（DRX）的原则，eNodeB会通过系统消息广播小区默认的DRX寻呼周期给小区中所有UE。</p><h3 id="10-LTE关键技术"><a href="#10-LTE关键技术" class="headerlink" title="10. LTE关键技术"></a>10. LTE关键技术</h3><ol><li><p>天线的解决方式<br>  分集技术.</p><pre><code> 发射分集：两个不同的天线发送相同的数据；在弱环境下使用，即边缘区域或者环境差的情况   空间分集：（空间复用）：两个不同的天线发送不同的数据；在环境好的情况下使用，中心区域     </code></pre></li><li><p>MIMO技术<br> 多进多出</p></li><li><p>Beamforming 波束赋型<br> 所谓波束赋型是指无线信号具有一定的方向性，避免信号的干扰。<br> TDD-LTE使用了波束赋型，FDD-LTE没有使用波束赋型。因为波束赋型从TD-SCDMA里引进来的（智能天线）。</p></li><li><p>新的无线接入技术<br> OFDMA   <strong>正交频分复用</strong>多址接入   ~LTE下行时使用OFDMA<br> SC-FDMA  单载波频分复用多址接入     ~LTE上行时使用SC-FDMA</p><ul><li><p>为什么下行采用OFDMA技术、上行采用SC-FDMA技术?<br>1.峰均比过高，会损坏终端设备<br>2.使用SC-FDMA能够多终端设备省电</p><p>使用 | 作用<br>OFDM | 能够提高频谱效率<br>MIMO | 提高用户的容量及速率<br>波束赋型| 增加覆盖抑制干扰</p></li></ul></li></ol>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;课堂笔记&quot;&gt;&lt;a href=&quot;#课堂笔记&quot; class=&quot;headerlink&quot; title=&quot;课堂笔记&quot;&gt;&lt;/a&gt;课堂笔记&lt;/h1&gt;&lt;h3 id=&quot;1-HSDPA-高速下行分组接入-又称3-5G，属于WCDMA技术的延伸-速率达到14-4Mbit-s&quot;&gt;&lt;a h
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="https://ghostwithblade.github.io/2019/09/23/hello-world/"/>
+    <id>https://ghostwithblade.github.io/2019/09/23/hello-world/</id>
+    <published>2019-09-23T12:18:45.978Z</published>
+    <updated>2019-09-23T12:18:45.978Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre><code class="bash">$ hexo new &quot;My New Post&quot;</code></pre><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre><code class="bash">$ hexo server</code></pre><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre><code class="bash">$ hexo generate</code></pre><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre><code class="bash">$ hexo deploy</code></pre><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+</feed>
